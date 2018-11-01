@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.topnavbaggrund {
+	background-color: #4A68AD;
+	padding: 35px 20px;
+}
+
+/* Styling af logo på menubar */
+.topnavlogo a {
+    float: left;
+    display: block;
+	width:150px;
+	height: 70px; 
+
+}
+/* styling af menu bar */ 
+.topnav a {
+    float: right;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+	width:150px;
+}
+
