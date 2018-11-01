@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;    
+      
+}
+
+.grid {
+  width:800px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  align-items: center;     
+}
+
+.grid-item {
+  border: 1px solid #fff;
+  width: 330px;
+  height: 330px; 
+  
+}
+
+.zoom {
+    transition: transform .2s;
+    width: 330px;
+    height: 330px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
