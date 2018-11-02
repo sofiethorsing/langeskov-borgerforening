@@ -20,10 +20,8 @@
 }
 
 .grid-item {
-  border: 1px solid #fff;
-  width: 330px;
-  height: 330px; 
-  
+  width: 370px;
+  height: 370px; 
 }
 
 .zoom {
