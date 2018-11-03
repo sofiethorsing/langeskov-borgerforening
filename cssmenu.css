@@ -114,6 +114,14 @@
 
 /* Bestyrelse */
 
+.h2_kort {
+    font-family: sans-serif;
+}
+
+.p_kort {
+    font-family: sans-serif;
+}
+
 /* 3x3 */
 .column {
     float: left;
@@ -149,6 +157,7 @@
 
 .title {
     color: grey;
+    font-family: sans-serif;
 }
 
 /* Placerer kortene i centrum */
