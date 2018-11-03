@@ -163,7 +163,7 @@
 /* Placerer kortene i centrum */
 .container_2by2 {
     width: 60%; 
-    height:200px; 
+    height: auto; 
     margin: 0 auto;
 }
 
