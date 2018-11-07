@@ -11,10 +11,11 @@
     float: left;
     display: block;
 	width:150px;
-	height: 70px; 
+	height: 70px;
+	margin-top: -26px;
 
 }
-/* styling af menu bar */ 
+/* styling af menu bar */
 .topnav a {
     float: right;
     display: block;
@@ -42,7 +43,7 @@
     overflow-y: scroll;
     scroll-behavior: smooth;
     -webkit-overflow-y-scrolling: scroll;
-    -webkit-scroll-behavior: smooth; 
+    -webkit-scroll-behavior: smooth;
 }
 
 .contentwrapper{
@@ -157,9 +158,7 @@
 
 /* Placerer kortene i centrum */
 .container_3 {
-    width: 50%; 
-    height: auto; 
+    width: 50%;
+    height: auto;
     margin: 0 auto;
 }
-
-
