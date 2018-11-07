@@ -7,8 +7,7 @@
 .grid-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;    
-      
+  margin-top: 50px;   
 }
 
 .grid {
@@ -20,16 +19,14 @@
 }
 
 .grid-item {
-  border: 1px solid #fff;
-  width: 330px;
-  height: 330px; 
-  
+  width: 335px;
+  height: 335px; 
 }
 
 .zoom {
     transition: transform .2s;
-    width: 330px;
-    height: 330px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
 }
 

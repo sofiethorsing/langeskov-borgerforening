@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
 .topnavbaggrund {
 	background-color: #4A68AD;
 	padding: 35px 20px;
@@ -111,3 +110,56 @@
         width: 100%;
     }
 }
+
+/* Bestyrelse */
+
+.h2_kort {
+    font-family: sans-serif;
+}
+
+.p_kort {
+    font-family: sans-serif;
+}
+
+.img_bestryrelse {
+    width: 100%;
+}
+
+/* 3 */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Skygge på kortet */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Padding i containeren */
+.container {
+    padding: 0 5px 5px;
+}
+
+/* Clear floats */
+.container::after, .row_bestyrelse::after {
+    content: "";
+    clear: inherit;
+    display: table;
+}
+
+.title {
+    color: grey;
+    font-family: sans-serif;
+}
+
+/* Placerer kortene i centrum */
+.container_3 {
+    width: 50%; 
+    height: auto; 
+    margin: 0 auto;
+}
+
+

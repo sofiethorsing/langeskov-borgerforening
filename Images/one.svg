@@ -3,20 +3,22 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#F5CF8E;}
+	.st0{fill:#A2C1E5;}
 	.st1{fill:none;}
-	.st2{font-family:'ArialRoundedMTBold';}
-	.st3{font-size:48px;}
+	.st2{fill:#625D75;}
+	.st3{font-family:'Montserrat-Regular';}
+	.st4{font-size:60px;}
 </style>
 <title>one</title>
 <desc>Created with Sketch.</desc>
 <g id="Page-1">
 	<g id="example-mockup" transform="translate(-169.000000, -361.000000)">
 		<g id="one" transform="translate(169.000000, 361.000000)">
-			<rect id="Rectangle-70" y="0" class="st0" width="300" height="300"/>
+			<rect id="Rectangle-70" class="st0" width="300" height="300"/>
 		</g>
 	</g>
-	<rect x="22" y="114.6" class="st1" width="241.3" height="134"/>
-	<text transform="matrix(1 0 0 1 99.3893 149.5392)"><tspan x="0" y="0" class="st2 st3">Bliv </tspan><tspan x="-48" y="57.6" class="st2 st3">Medlem</tspan></text>
 </g>
+<rect x="33.5" y="84" class="st1" width="251" height="148"/>
+<text transform="matrix(1 0 0 1 29 131.1797)" class="st2 st3 st4">Bliv </text>
+<text transform="matrix(1 0 0 1 29 203.1797)" class="st2 st3 st4">medlem</text>
 </svg>
