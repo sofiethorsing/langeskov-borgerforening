@@ -59,7 +59,7 @@
     display: flex;
 }
 
-.box{
+.card{
     min-height: 100px;
     width: 33.3333%;
     padding: 50px;
