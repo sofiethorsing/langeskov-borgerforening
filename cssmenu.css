@@ -58,7 +58,7 @@
     display: flex;
 }
 
-.box{
+.card{
     min-height: 100px;
     width: 33.3333%;
     padding: 50px;
@@ -113,15 +113,6 @@
 
 /* Bestyrelse */
 
-
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-
 .h2_kort {
     font-family: sans-serif;
 }
@@ -149,13 +140,13 @@
 
 /* Padding i containeren */
 .container {
-    padding: 0 16px;
+    padding: 0 5px 5px;
 }
 
 /* Clear floats */
 .container::after, .row_bestyrelse::after {
     content: "";
-    clear: both;
+    clear: inherit;
     display: table;
 }
 
@@ -166,9 +157,9 @@
 
 /* Placerer kortene i centrum */
 .container_3 {
-    width: 60%; 
+    width: 50%; 
     height: auto; 
     margin: 0 auto;
 }
 
-/* Bestyrelse */
+
