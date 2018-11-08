@@ -1,3 +1,14 @@
+/* Styling af logo på menubar */
+.topnavlogo a {
+    float: left;
+    display: block;
+	width:150px;
+	height: 70px;
+	margin-top: 10px;
+  margin-left: 20px;
+
+}
+
 @charset "UTF-8";
 
 *{
@@ -27,7 +38,7 @@ a:hover{
     overflow-y: scroll;
     scroll-behavior: smooth;
     -webkit-overflow-y-scrolling: scroll;
-    -webkit-scroll-behavior: smooth; 
+    -webkit-scroll-behavior: smooth;
 }
 
 .contentwrapper{
@@ -187,4 +198,52 @@ p.antal {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+/* Slideshow*/
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-left: 25%;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }

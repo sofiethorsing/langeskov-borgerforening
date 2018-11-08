@@ -1,6 +1,22 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*skrift */
+
+.content p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 5px;
+    line-height: 25px;
+}
+.content h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
 .topnavbaggrund {
 	background-color: #4A68AD;
 	padding: 35px 20px;

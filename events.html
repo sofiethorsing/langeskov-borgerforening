@@ -11,7 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">  
+  <div class="topnavlogo">
+      <a href="index.html"><img src="billeder/logo1.png" alt="logo" align="left" style="width:200px;"></a>
+  </div>
+    <div class="wrapper">
         <!-- Events-->
         <div class="contentwrapper">
             <!-- Række med kasser -->
@@ -23,7 +26,7 @@
                                 <h2>Pigerne på Sprogø</h2>
                             <img src="images/pigerne.jpg" alt="pigerne på sprogø" style="width:100%">
                                 <p>Onsdag den 31. oktober 2018 kl. 19:00</p>
-                                <p>Langeskov Borgerforening vil gerne give sine medlemmer mulighed for at høre om de virkelige 
+                                <p>Langeskov Borgerforening vil gerne give sine medlemmer mulighed for at høre om de virkelige
                                 skæbner og historier fra Sprogø med et foredrag af Carsten Egø Nielsen.<br></p>
 
                                 <div class="bottomcard">
@@ -35,7 +38,7 @@
 
                                 <!-- Trigger/Open The Modal -->
                                 <button id="myBtn" class="submit">Køb</button>
-                                
+
                                 <!-- The Modal -->
                                 <div id="myModal" class="modal">
 
@@ -44,14 +47,14 @@
                                           <span class="close">&times;</span>
                                           <p>btn1</p>
                                         </div>
-                                      
+
                                       </div>
                             </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Juletur -->
                 <div class="column">
                     <div class="card">
@@ -72,7 +75,7 @@
                             <div class="quantity">
                                     <!-- Trigger/Open The Modal -->
                                 <button id="myBtn2" class="submit">Køb</button>
-                                
+
                                 <!-- The Modal -->
                                 <div id="myModal2" class="modal">
 
@@ -81,7 +84,7 @@
                                           <span class="close">&times;</span>
                                           <p>btn2</p>
                                         </div>
-                                      
+
                                       </div>
                                 </div>
                                 </div>
@@ -90,7 +93,7 @@
                 </div>
                 <!-- Musical -->
                 <div class="column">
-                    <div class="card">   
+                    <div class="card">
                         <div class="content">
                                 <h2>Musical i Odeoen</h2>
                             <img src="images/musical.jpg" alt="musical i odeon" style="width:100%">
@@ -99,18 +102,18 @@
                                 <p>Langeskov Borgerforening har købt et antal billetter til musicalen
                                 "Kærlighed ved første hik" som opføres i Odeon.</p>
                                 <a href="https://odeonodense.dk/events/kaerlighed-ved-foerste-hik-the-musical/" target="_blank">Læs mere på Odeons hjemmeside.</a><br>
-                                
+
 
 
                                     <div class="bottomcard">
-                                
+
                                         <p>Pris: DDK 395,00</p>
                                         <p class="quote"> Kun for medlemmer af Langeskov Borgerforening.</p>
                                         <!-- Antal -->
                                         <div class="quantity">
                                             <!-- Trigger/Open The Modal -->
                                 <button id="myBtn3" class="submit">Køb</button>
-                                
+
                                 <!-- The Modal -->
                                 <div id="myModal3" class="modal">
 
@@ -119,44 +122,92 @@
                                           <span class="close">&times;</span>
                                           <p>btn3</p>
                                         </div>
-                                      
+
                                       </div>
                                         </div>
 
                                     </div>
-                                
+
 
 
                             </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
+    </div>
+
+    <h2> <center> Billeder af vores events </center></h2>
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="Images/sprogoe.jpg" style="width:100%">
+      <div class="text">Sprogø pigehjemmet</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="Images/anjaogviktor.jpg" style="width:100%">
+      <div class="text">Der bliver givet den maks gas til Anja og Viktor</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="Images/shopping.jpg" style="width:100%">
+      <div class="text">Juleshopping i Århus' gader</div>
+    </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
 
     <script>
             // Get the modal
             var modal = document.getElementById('myModal');
-            
+
             // Get the button that opens the modal
             var btn = document.getElementById("myBtn");
-            
+
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[0];
-            
-            // When the user clicks the button, open the modal 
+
+            // When the user clicks the button, open the modal
             btn.onclick = function() {
                 modal.style.display = "block";
             }
-            
+
             // When the user clicks on <span> (x), close the modal
             span.onclick = function() {
                 modal.style.display = "none";
             }
-            
-            
+
+
             </script>
-            
+
+            <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 4000); // Change image every 2 seconds
+            }
+            </script>
 </body>
 </html>
-
