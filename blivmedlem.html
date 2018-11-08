@@ -13,6 +13,46 @@
 			<div class="topnavlogo">
 					<a href="index.html"><img src="billeder/logo1.png" alt="logo" align="left" style="width:200px;"></a>
 			</div>
+		
+		<button onclick="document.getElementById('idet').style.display='block'" style="width:auto;">Log ind</button>
+
+<div id="idet" class="modal" style="right: auto">
+  
+  <form class="modal-content animate" >
+
+    <div class="container">
+      <label for="uname"><b>Brugernavn</b></label>
+      <input type="text" placeholder="Din e-mail" name="uname" required>
+
+      <label for="psw"><b>Adgangskode</b></label>
+      <input type="password" placeholder="Adgangskode" name="psw" required>
+        
+      <button type="submit">Log ind</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Husk mig
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('idet').style.display='none'" class="anknap">Luk</button>
+      <span class="psw">Glemt <a href="#">kode?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// få modal
+var modal = document.getElementById('idet');
+
+// Når brugeren klikker overalt uden for modalet, skal det lukke
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+		
 
 			<div class="topnav">
 					<a href="blivmedlem.html"> <b> Bliv medlem</a>
