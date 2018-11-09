@@ -4,28 +4,29 @@
 <meta charset="UTF-8">
 <title>Bliv medlem</title>
 	<link href="cssmenu.css" rel="stylesheet" type="text/css">
-    
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
 </head>
 
 <body>
 	<div class="topnavbaggrund">
 			<div class="topnavlogo">
-					<a href="index.html"><img src="billeder/logo1.png" alt="logo" align="left" style="width:200px;"></a> 
+					<a href="index.html"><img src="billeder/logo1.png" alt="logo" align="left" style="width:200px;"></a>
 			</div>
-		
+
 		<button onclick="document.getElementById('idet').style.display='block'" style="width:auto;">Log ind</button>
 
 <div id="idet" class="modal" style="right: auto">
-  
+
   <form class="modal-content animate" >
 
-    <div class="container"> 
+    <div class="container">
       <label for="uname"><b>Brugernavn</b></label>
       <input type="text" placeholder="Din e-mail" name="uname" required>
 
       <label for="psw"><b>Adgangskode</b></label>
       <input type="password" placeholder="Adgangskode" name="psw" required>
-        
+
       <button type="submit">Log ind</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Husk mig
@@ -37,6 +38,11 @@
       <span class="psw">Glemt <a href="#">kode?</a></span>
     </div>
   </form>
+</div>
+
+
+<div class="footer">
+  <p>Footer</p>
 </div>
 
 <script>
@@ -51,23 +57,17 @@ window.onclick = function(event) {
 }
 </script>
 
-		
+
 
 			<div class="topnav">
-					<a href="blivmedlem.html">Bliv medlem</a>
-					<a href="event.html">Event</a>
+					<a href="blivmedlem.html"> <b> Bliv medlem</a>
+					<a href="events.html">Event</a>
 					<a href="bestyrelse.html">Bestyrelse</a>
-					<a href="omos.html">Om os</a>
-                <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Søg.." name="search">
-      
-    </form>
-  </div>
+					<a href="omos.html">Om os </b> </a>
 			</div>
 	</div>
 	<h1>Info om pris, hvem kan</h1>
 	<h1>Vedtægter</h1>
-	
+
 </body>
 </html>
