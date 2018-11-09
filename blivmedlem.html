@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Bliv medlem</title>
 	<link href="cssmenu.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
   
   <form class="modal-content animate" >
 
-    <div class="container">
+    <div class="container"> 
       <label for="uname"><b>Brugernavn</b></label>
       <input type="text" placeholder="Din e-mail" name="uname" required>
 
@@ -57,6 +58,12 @@ window.onclick = function(event) {
 					<a href="event.html">Event</a>
 					<a href="bestyrelse.html">Bestyrelse</a>
 					<a href="omos.html">Om os</a>
+                <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Søg.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
 			</div>
 	</div>
 	<h1>Info om pris, hvem kan</h1>
