@@ -20,7 +20,7 @@
     display: block;
 	width:150px;
 	height: 70px;
-  margin-top: -40px;
+  margin-top: -2%;
   margin-left: 20px;
 
 
@@ -63,3 +63,16 @@
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
 }
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding:20px;
+    color:white;
+    background-color:#5470B1;
+    text-align: center;
+  }
