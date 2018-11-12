@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.topnavbaggrund {
+	background-color: #4A68AD;
+	padding: 35px 20px;
+}
+
+/* Styling af logo på menubar */
+.topnavlogo a {
+    float: left;
+    display: block;
+	width:150px;
+	height: 70px; 
+
+}
+/* styling af menu bar */ 
+.topnav a {
+    float: right;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+	width:150px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    height: 100px;
+    left: 0;
+    top: 0;
+    display: block;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-y-scrolling: scroll;
+    -webkit-scroll-behavior: smooth; 
+}
+
+.contentwrapper{
+    width: 1224px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 50px;
+}
