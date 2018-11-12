@@ -197,6 +197,7 @@ button {
 	background-color: #4A68AD;
     color: black; /* farve på skrift på knap*/
     padding: 14px 20px;
+    margin-right: 5%
 }
 
 button:hover {
@@ -214,6 +215,7 @@ button:hover {
 
 .container {
     padding: 16px;
+
 }
 
 span.psw {
@@ -269,6 +271,7 @@ span.psw {
        width: 100%;
     }
 }@charset "UTF-8";
+
 
 /* Footer */
 .footer {
