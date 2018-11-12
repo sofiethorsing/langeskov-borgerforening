@@ -1,17 +1,26 @@
-.b1, .b2, .b3, .b4{
-    display: inline-block;
-    position: relative;
-    margin: 30px;
-    float: left;
-    width: 20%;
-    height:400px;
-    background-color: #a2c1e5;
-    font-family: sans-serif, 'Raleway';
-    text-align: center;
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.card {
+   background-color: #a2c1e5;
+   font-family: sans-serif, 'Raleway';
+   text-align: center;
+   margin: 30px;
+   height: 380px;      
 }
 
 .menu_h2 {
-    font-size: 35px;   
+    font-size: 35px;
+   padding-top: 20px;
 }
 
 .img_menu {
@@ -48,3 +57,4 @@ a:visited {
 .button:hover {
     opacity: 0.8;
 }
+
