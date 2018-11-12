@@ -78,12 +78,12 @@ a.link:hover{
     padding: 2px 16px;
 }
 
-.content h2{
+h2{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .content img{
@@ -155,7 +155,6 @@ a.link:hover{
         display: block;
         margin-bottom: 20px;
     }
-<<<<<<< HEAD
 }
 
 /* The Modal (background) */
@@ -195,7 +194,6 @@ a.link:hover{
     text-decoration: none;
     cursor: pointer;
 }
-
 
 /* Slideshow*/
 * {box-sizing: border-box;}
