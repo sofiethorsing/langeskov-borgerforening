@@ -1,3 +1,31 @@
+/*skrift */
+
+.content p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 5px;
+    line-height: 25px;
+}
+.content h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+/* Styling af logo på menubar */
+.topnavlogo a {
+    float: left;
+    display: block;
+	width:150px;
+	height: 70px;
+  margin-top: -1.8%;
+  margin-left: 20px;
+
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,20 +35,20 @@
 .grid-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;   
+  margin-top: 50px;
 }
 
 .grid {
   width:800px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; 
-  align-items: center;     
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .grid-item {
   width: 335px;
-  height: 335px; 
+  height: 335px;
 }
 
 .zoom {
@@ -33,5 +61,18 @@
 .zoom:hover {
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding:20px;
+    color:white;
+    background-color:#5470B1;
+    text-align: center;
+  }

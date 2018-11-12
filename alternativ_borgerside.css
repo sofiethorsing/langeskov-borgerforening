@@ -1,0 +1,50 @@
+.b1, .b2, .b3, .b4{
+    display: inline-block;
+    position: relative;
+    margin: 30px;
+    float: left;
+    width: 20%;
+    height:400px;
+    background-color: #a2c1e5;
+    font-family: sans-serif, 'Raleway';
+    text-align: center;
+}
+
+.menu_h2 {
+    font-size: 35px;   
+}
+
+.img_menu {
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+}
+
+.button {
+    font-size: 20px; 
+    font-family: sans-serif, 'Montserrat';
+    background-color: #6db2ab;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    cursor: pointer;
+    border-radius: 4px;
+    width: 150px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
