@@ -30,22 +30,22 @@
     padding-top: 50px;
 }
 
-a.musical{
+a.link{
     color: #5470B1;
     text-decoration: none;
 }
 
-a.musical:hover{
+a.link:hover{
     color: #A2C1E5;
     text-decoration: none;
 }
 
-.rowevent{
+.row{
     margin: 0 -5%;
 }
 
 /* Clear floats after the columns */
-.rowevent:after{
+.row:after{
     content: "";
     display: table;
     clear: both;
@@ -56,7 +56,7 @@ a.musical:hover{
     width: 33.3333%;
     padding: 0 10px;
 }
-.cardevent{
+.card{
     box-shadow: 0 4px 4px 0 rgba(0,0,0, 0.2);
     padding: 16px;
     text-align: center;
@@ -64,7 +64,7 @@ a.musical:hover{
     min-height: 680px;
 }
 
-.cardevent:hover{
+.card:hover{
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
 }
 
