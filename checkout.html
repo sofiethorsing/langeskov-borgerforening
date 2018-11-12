@@ -1,0 +1,402 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
+
+    <style>
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Beskrivelse */
+
+.cardcheck{
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  min-height: 100vh;
+}
+
+.bottomcard{
+  position: absolute;
+  bottom: 20px;
+  width: 30%;
+}
+
+.content{
+  padding: 2px 16px;
+}
+
+.content h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.content img{
+  width: 100%;
+  height: 330px;
+  margin-bottom: 10px;
+}
+
+.content p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  padding: 5px;
+  line-height: 25px;
+}
+
+.content .quote{
+  font-size: 12px;
+  font-style: italic;
+}
+
+.rowcheck {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  flex: 25%;
+}
+
+.col-50 {
+  flex: 25%;
+}
+
+
+.col-75 {
+  flex: 50%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  min-height: 100vh;
+}
+
+.container-kurv{
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: 'Raleway', sans-serif;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #6db2ab;
+  color: black;
+  padding: 10px;
+  margin: 4px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #5e9b95;
+}
+
+a.check {
+  color: #5470b1;
+  font-weight: 400;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+h4.antal{
+  float: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+h4.kurv,
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+input[type=number]{
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-left: 170px;
+  margin-top: 12px;
+  width: 100px; 
+  float: right;
+}
+
+span.price{
+  float: right;
+  color: grey;
+  font-family: 'Raleway', sans-serif;
+}
+
+.left{
+  width: 33%;
+  position: relative;
+  float: left;
+}
+
+.center{
+  width: 33%;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.right{
+  width: 32%;
+  float: left;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .rowcheck{
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+    
+    </style>
+</head>
+<body>
+    
+        <div class="left">
+                
+            <div class="cardcheck">
+                <div class="content">
+                    <h2>Juletur til Århus<br>
+                    Lørdag den 24. november kl. 9.00 - 20.00</h2>
+                  <img src="images/aarhus.jpg" alt="århus">
+                    <p>Årets juletur går til Den Gamle By i Århus. Tag med og oplev julestemningen som
+                        den var på mormor og morfars tid. Har man ikke lyst til at tage i »Den Gamle By« er
+                        man velkommen til at tage med bussen til Århus og bruge dagen på egen hånd i
+                        Århus.
+                        Kun for medlemmer af Langeskov Borgerforening.
+                        Pris: 49,00 kr. – indgang til Den Gamle By er for egen regning.</p>
+                </div>
+            </div>
+                
+        </div>
+
+        <div class="center">
+
+            <div class="container">
+                      
+                <div class="rowcheck">
+                    <form action="/action_page.php">
+                      <div class="col-50">
+                        <h3>Dine oplysninger</h3>
+                        <div class="rowcheck">
+                          <label for="login"><i class="fa fa-user"></i></label>
+                          <input type="text" id="login" name="login" placeholder="Brugernavn">
+                          <input type="text" id="password" name="password" placeholder="Kodeord">
+                          <label for="fname"><i class="fa fa-user"></i></label>
+                          <input type="text" id="fname" name="firstname" placeholder="Fulde Navn">
+                          <label for="adr"><i class="fa fa-address-card-o"></i></label>
+                          <input type="text" id="adr" name="address" placeholder="Adresse">
+                      </div>
+                      </div>
+    
+                        <div class="rowcheck">
+                          <div class="col-50">
+                            <input type="text" id="zip" name="zip" placeholder="Postnummer">
+                          </div>
+    
+                          <div class="col-50">
+                            <input type="text" id="town" name="town" placeholder="By">
+                          </div>
+                        </div>
+    
+                        <div class="rowcheck">
+                          <div class="col-50">
+                            <label for="email"><i class="fa fa-envelope"></i></label>
+                            <input type="text" id="email" name="email" placeholder="Email">
+                            <label for="card"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="Kortnummer"> 
+                            
+                            <div class="rowcheck">
+                              <div class="col-50"> 
+                                <input type="text" id="expmonth" name="expmonth" placeholder="Udløbsmåned">
+                              </div>
+    
+                              <div class="col-50">
+                                <input type="text" id="expyear" name="expyear" placeholder="Udløbsår">
+                              </div>
+    
+                              <div class="col-50">
+                                <input type="text" id="cvv" name="cvv" placeholder="CVV">
+                              </div>
+                              <div class="col-50">
+                              <h3><a class="check" href="#">Betal med mobilepay her</a></h3>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                  </div> <!--Her slutter row 1 i column 2-->
+                  </div><!--Første container i column 2 slutter her-->
+                
+
+        </div>
+
+        <div class="right">
+
+            <div class="container-kurv">
+                   
+                <div class="rowcheck">
+                  <div class="col-25">
+                 <form action="/action_page.php">
+                  <h4 class="antal">Antal:</h4>
+                  <input type="number" name="quantity" min="1" max="5">
+                </form>
+              </div>
+              </div>
+          
+              <div class="rowcheck">
+                  <div class="col-25">
+                <h4 class="kurv">Kurv <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
+                <p><a class="check" href="#">Juletur</a> <span class="price">DDK49</span></p>
+              </div>
+            </div>
+          
+                <hr>
+                <p>Total <span class="price" style="color:black"><b>DDK49</b></span></p>
+                <button id="myBtn" class="btn">Gennemfør betaling</button>
+
+
+                <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="images/takbillede.png" alt="tak" width="1100px" height="700px"> 
+    </div>
+  
+  </div>
+  
+               </div>
+
+        </div>
+      
+        
+
+
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        
+        </script>
+        
+</body>
+</html>
