@@ -8,6 +8,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
+	
+	<style>
+/* Style til modal på bliv medlem */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+		
+.btn {
+  background-color: #6db2ab;
+  color: black;
+  padding: 10px;
+  margin: 4px;
+  border: none;
+  width: 182px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn:hover {
+  background-color: #5e9b95;
+}
+	
+</style>
 </head>
 
 <body>
@@ -68,7 +126,7 @@ window.onclick = function(event) {
     </form>
   </div>
 			</div>
-	</div>
+	</div>	
 	
 	<div class="wrapper">
 			
@@ -89,7 +147,7 @@ window.onclick = function(event) {
 												 <div class="bottomcard">
 
 
-												  <!-- Antal og køb -->
+												  <!-- Tilmeld -->
 													 <div class="quantity">
 
 													 <button class="submit">Tilmeld</button>
@@ -112,12 +170,75 @@ window.onclick = function(event) {
 
 										Enkelte arrangementer kan være åbne for ikke -medlemmer mod ekstrabetaling. Dette vil fremgå af beskrivelsen på aktivitets siden.<br></br>
 
-										Oplys ved tilmeldingen, om du ønsker transport sammen med andre. Dette kan i de fleste tilfælde arrangeres.<br></br>
+										Oplys ved tilmeldingen, om du ønsker transport sammen med andre. Dette kan i de fleste tilfælde arrangeres.<br></br></p>
+	
+												<div class="bottomcard">
+													
+										<button id="myBtn" class="btn">Læs vedtægterne her</button>
+												</div>
 
-										Læs vedtægterne her<br></br> </p>
+
+														<!-- The Modal -->
+													<div id="myModal" class="modal">
+
+														<!-- Modal content -->
+														<div class="modal-content">
+														  <span class="close">&times;</span>
+														  <p> Vedtægter <br></br>
+															  
+															  §1 Foreningens navn er Langeskov Borgerforening, og foreningens formål er at samle 	 medlemmerne til arrangementer af såvel selskabelig som kulturel karakter <br></br>
+															  § 2 Foreningen skal være upartisk.<br></br>
+															  § 3 Som medlem optages:<br></br>
+															  A) Enhver borger som er bosiddende i gl. Langeskov Kommune, eller i dennes omegn.<br>
+															  B) Borger med stor tilknytning til Langeskov, det være sig børn eller børnebørn af medlemmer i Langeskov Borgerforening.<br>
+															  C) Bestyrelsen kan desuden optage personer, der skønnes at gavne foreningen.
+															  Medlemskabet dækker hele husstanden
+															  Medlemskabet bevares ved fraflytning fra kommunen.<br></br>
+															  § 4 Kontingentet fastsættes hvert år på generalforsamlingen og indbetales forud.
+															  Medlemskabet bevares ved fraflytning fra kommunen.<br></br>
+															  § 5 Foreningens midler anvendes til arrangementer af selskabelig og kulturel art, samt til udvikling af foreningens virke, som bestyrelsen finder formålstjenstligt at fremme.<br></br>
+															  § 6 Udmeldelse af foreningen sker ved skriftlig henvendelse til kassereren. Tilbagebetaling af indbetalt kontingent kan ikke finde sted. <br></br>
+															  § 7 Bestyrelsen er bemyndiget til at bestemme, hvornår der skal afholdes arrangementer. Dog skal der i foreningen arrangeres mindst 2 arrangementer af selskabelig og/eller kulturel art hvert år. <br></br><br>
+                                                              § 8 Foreningen ledes af en bestyrelse på 7 medlemmer, der vælges på generalforsamlingen ved simpelt stemmeflertal. Navne på kandidater til posterne som enten bestyrelsesmedlem, suppleant eller revisor skal være Langeskov Borgerforenings formand i hænde senest 8 dage før den årlige generalforsamling. Bestyrelsen konstituerer sig selv. 3 bestyrelses- medlemmer samt 1 revisor vælges på lige år. 4 bestyrelsesmedlemmer samt 1 revisor vælges på ulige år. Disse valg gælder for 2 år ad gangen. Såfremt et bestyrelsesmedlem udtræder af bestyrelsen, fortsætter suppleanten som bestyrelsesmedlem den resterende del af den periode, det udtrådte bestyrelsesmedlem var valgt for. Samme regel gælder for så vidt angår revisorsuppleanter. 2 bestyrelsessuppleanter og 1 revisorsuppleant vælges for et år ad gangen. <br></br> 
+															  §9 Generalforsamlingen, der er foreningens øverste myndighed, afholdes hvert år inden udgangen af april. Indkaldelse til generalforsamlingen sker med mindst 14 dages varsel – skriftlig eller ved annoncering i pressen. Forslag, der ønskes behandlet på generalforsamlingen, skal være bestyrelsen i hænde 8 dage før generalforsamlingen. <br></br> 
+															  Generalforsamlingen afholdes med flg. Dagsorden:<br>
+																1) Valg af dirigent<br>
+																2) Årsberetning<br>
+																3) Fremlæggelse af regnskab<br>
+																4) Fastsættelse af kontingent<br>
+																5) Indkomne forslag<br>
+																6) Valg af bestyrelse<br>
+																7) Valg af revisor<br>
+																8) Eventuelt<br>
+																Al afstemning sker skriftligt såfremt ét medlem kræver dette. Der kan ikke stemmes ved fuldmagt. Hvert medlemskab har max. 2 stemmer. For at stemmeret på generalforsamlingen kan opnås, skal kontingentet være betalt for det regnskabsår, som generalforsamlingen omhandler.<br>
+
+														     § 10 Regnskabet går fra d. 1/1 til d. 31/12.<br></br>
+
+														§ 11 Ekstraordinær generalforsamling kan altid sammenkaldes af et flertal i bestyrelsen eller såfremt 25 af medlemmerne begærer det skriftligt til formanden med fortegnelse over, hvad der ønskes behandlet. Ekstraordinær generalforsamling skal afholdes senest 20 dage efter at bestyrelsen har modtaget begæring derom, og der skal indkaldes skriftligt eller ved annoncering i pressen med mindst 8 dages varsel. <br></br>
+
+														§ 12 Lovændringer kræver, at over 2/3 af de fremmødte medlemmer stemmer for forslaget. Der kan ikke stemmes ved fuldmagt. <br></br> 
+
+														§ 13 Der tages referat af generalforsamlingen og bestyrelsesmøderne. Kassereren fører medlemsliste og regnskab. Den kontante beholdning bør ikke overstige den for den daglige drift nødvendige kapital. Midlerne i øvrigt anbringes til størst mulig forrentning. Der må dog ikke under nogen omstændigheder drives spekulation med foreningens midler. <br></br> 
+
+														§ 14 Bestyrelsen er ansvarlig for foreningens midler og for at foreningen ledes på forsvarlig vis. Den handler i foreningens navn og kan kun forpligte foreningen i overensstemmelse med dens love og vedtagne beslutninger. <br></br> 
+
+														§ 15 Foreningen kan ikke opløses så længe 25 medlemmer ønsker den opretholdt. Beslutning om foreningens opløsning kan kun træffes på en i den anledning indvarslet ekstraordinær generalforsamling og da med 2/3 af de fremmødte stemmers flertal.<br></br>
+
+														§ 16 Ved foreningens opløsning træffer general-forsamlingen afgørelse om formuens anvendelse. <br></br> 
+
+														Foreningen er stiftet 25. august 1924.<br>
+														Vedtægtsændringer: 21. april 1988, 25. februar 1998, 13. marts 2002, 8. marts 2006, 13 marts 2012 senest d. 13. marts 2018
+                                                         </p> 
+															 
+														</div>
+
+													  </div>
+
 									</div>
-								</div>
-							</div>
+
+       					  </div> 
+						</div>
+								
 
 								<!-- fordele -->
 						 <div class="column">
@@ -145,6 +266,27 @@ window.onclick = function(event) {
 					
 		      </div> 
 		</div>
-	
+<script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        
+        </script>	
 </body>
 </html>
