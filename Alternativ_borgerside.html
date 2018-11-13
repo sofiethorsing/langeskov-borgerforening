@@ -4,13 +4,16 @@
     <meta charset="UTF-8"> 
     <title>Langeskov borgerforening</title>
     <link rel="stylesheet" type="text/css" href="alternativ_borgerside.css">
+    <link rel="stylesheet" type="text/css" href="news.css">
+    <script src="email_list.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
 <body>
 
-  
+<div class="wrapper">  
+    <div class="contentwrapper">
 <div class="row">
   <div class="column">
       <div class="card">
@@ -20,22 +23,74 @@
     
     <div class="column">
         <div class="card">
-        <h2 class="menu_h2">Events</h2><img class="img_menu" src="Images/two-tickets.png"><a href="events.html"><button class="button">Events</button></a>
+        <h2 class="menu_h2">Events</h2><img class="img_menu" src="Images/billetter.png"><a href="events.html"><button class="button">Events</button></a>
     </div>
     </div>    
     
 <div class="column">
     <div class="card">
-    <h2 class="menu_h2">Bestyrelse</h2><img class="img_menu" src="Images/kisspng-meeting-board-of-directors-advisory-board-business-meeting-5ac061a13de9d8.5275412315225573452536.png"><a href="bestyrelse.html"><button class="button">Bestyrelse</button></a>
+    <h2 class="menu_h2">Bestyrelse</h2><img class="img_menu" src="Images/bestyrelsehvid.png"><a href="bestyrelse.html"><button class="button">Bestyrelse</button></a>
     </div>
     </div>
     
 <div class="column">
     <div class="card">
-    <h2 class="menu_h2">Om os</h2><img class="img_menu" src="Images/kisspng-book-black-and-white-clip-art-stacked-books-5ae0e3111e2054.4841903415246876331234.png"><a href="omos.html"><button class="button">Om os</button></a></div>
+    <h2 class="menu_h2">Om os</h2><img class="img_menu" src="Images/bog.png"><a href="omos.html"><button class="button">Om os</button></a></div>
     </div>
 
     </div>
-    
+
+<div class="row">    
+    <div class="newsletter">
+        
+            <div class="container_news">
+            <h2>Tilmeld dig vores nyhedsbrev</h2>
+            <p>Tilmeld dig for at modtage de seneste nyheder fra Langeskov borgerforening.</p>    
+            </div>
+            
+            <div class="container_news">
+            <form id="email_form" name="email_form" action="index.html" method="get">
+           
+            <label for="first_name">Fornavn</label>
+            <input type="text" id="first_name" name="first_name">    
+                
+            <label for="email_adress1">Email adresse:</label>
+            <input type="text" id="email_adress1" name="email_adresse1">
+            
+            
+                
+            <label for="email_adress2">Gentag Email adresse:</label>
+            <input type="text" id="email_adress2" name="email_adress2">
+            
+            
+            
+            
+            <label>&nbsp;</label>
+            <input type="submit" id="join_list" value="Tilmeld">
+            </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <footer>
+                <div class="footer">
+                    <div class="fontfooter" >
+                        <p>Kontakt os</p>
+                        <p> Mobil: 28154523 </p>
+                        <p> Mail: langeskov@borgerforening.dk</p>
+                    </div>
+        
+                        <div class="fontfooter" >
+                        <p>Copyright &copy; 2018 Langeskov Borgerforening &#8226; Alle rettigheder forbeholdes.</p> 
+                    </div>
+        
+           <div class="fontfooter" >
+               <a href="https://www.facebook.com/Langeskovborgerforening-186504144718815/"><img src="images/fb.png" alt="Facebook" align="middle" class="facebook">
+                        
+                    </div>
+                 </div>
+        </footer>
 </body>
 </html>

@@ -7,6 +7,22 @@
 }
 
 /* Styling af logo på menubar */
+
+.loginbtn{
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #6db2ab;
+    color: black;
+    padding: 5px;
+    margin: 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
 .topnavlogo a {
     float: left;
     display: block;
@@ -31,20 +47,6 @@
     box-sizing: border-box;
 }
 
-.wrapper{
-    width: 100vw;
-    max-width: 100%;
-    min-height: 100vh;
-    height: 100px;
-    left: 0;
-    top: 0;
-    display: block;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    -webkit-overflow-y-scrolling: scroll;
-    -webkit-scroll-behavior: smooth; 
-}
-
 .contentwrapper{
     width: 1224px;
     position: absolute;
@@ -52,3 +54,47 @@
     transform: translateX(-50%);
     padding-top: 50px;
 }
+/* Styling af login modal */ 
+
+/* Login knap */
+.btnlog{
+    width: 80px;
+    background-color: #6db2ab;
+    padding: 4px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+/* Luk knap */
+button.anknap{
+    width: 80px;
+    background-color: #6db2ab;
+    padding: 4px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif; 
+}
+/* Password */
+input[type=password]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+  
+  }
+
+/* Brugernavn */
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+  }

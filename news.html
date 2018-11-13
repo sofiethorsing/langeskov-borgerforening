@@ -1,33 +1,42 @@
 <!DOCTYPE html>
-<html lang="da">
+<html>
 <head>
-    <meta charset="UTF-8">
-     <script src="snow.js"></script> 
-    <title>Tilmeld nyhedsbrev</title>
-    <link rel="stylesheet" type="text/css" href="news.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="news.css" />
+  <script src="email_list.js"></script>
 </head>
-
 <body>
+    <div class="newsletter">
+        
+        <div class="container_news">
+        <h2>Tilmeld dig vores nyhedsbrev</h2>
+        <p>Tilmeld dig for at modtage de seneste nyheder fra Langeskov borgerforening.</p>    
+        </div>
+        
+        <div class="container_news">
+        <form id="email_form" name="email_form" action="index.html" method="get">
+       
+        <label for="first_name">Fornavn</label>
+        <input type="text" id="first_name" name="first_name">    
+            
+        <label for="email_adress1">Email adresse:</label>
+        <input type="text" id="email_adress1" name="email_adresse1">
+        
+        
+            
+        <label for="email_adress2">Gentag Email adresse:</label>
+        <input type="text" id="email_adress2" name="email_adress2">
+        
+        
+        
+        
+        <label>&nbsp;</label>
+        <input type="submit" id="join_list" value="Tilmeld">
+        </form>
+    </div>
+    </div>
+</body>
+</html>
 
-<div class="newsletter">
-<form action="/action_page.php">
-  <div class="container_news">
-    <h2>Tilmeld dig vores nyhedsbrev</h2>
-      <p> Tilmeld dig for at modtage de seneste nyheder fra Langeskov borgerforening.</p>
-  </div>
-
-  <div class="container_news">
-    <input type="text" placeholder="Navn" name="name" required>
-    <input type="text" placeholder="Email adresse" name="mail" required>
-  </div>
-
-  <div class="container_news">
-    <input type="submit" value="Tilmeld">
-  </div>
-</form> 
-</div>        
-    
-</body>    
-</html>    

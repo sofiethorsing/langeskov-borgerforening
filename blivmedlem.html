@@ -48,7 +48,7 @@
     text-decoration: none;
     cursor: pointer;
 }
-		
+	
 .btn {
   background-color: #6db2ab;
   color: black;
@@ -73,10 +73,10 @@
 <body>
 	<div class="topnavbaggrund">
 			<div class="topnavlogo">
-					<a href="index.html"><img src="billeder/logo1.png" alt="logo" align="left" style="width:200px;"></a>
+					<a href="index.html"><img src="images/logo1.png" alt="logo" align="left" class="logo"></a>
 			</div>
 
-		<button onclick="document.getElementById('idet').style.display='block'" style="width:auto;">Log ind</button>
+		<button onclick="document.getElementById('idet').style.display='block'" class="loginbtn">Log ind</button>
 
 <div id="idet" class="modal" style="right: auto">
 
@@ -89,7 +89,7 @@
       <label for="psw"><b>Adgangskode</b></label>
       <input type="password" placeholder="Adgangskode" name="psw" required>
 
-      <button type="submit">Log ind</button>
+      <button type="submit" class="btnlog">Log ind</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Husk mig
       </label>
@@ -100,11 +100,6 @@
       <span class="psw">Glemt <a href="#">kode?</a></span>
     </div>
   </form>
-</div>
-
-
-<div class="footer">
-  <p>Footer</p>
 </div>
 
 <script>
@@ -122,12 +117,12 @@ window.onclick = function(event) {
 
 
 			<div class="topnav">
-					<a href="blivmedlem.html"> <b> Bliv medlem</a>
+					<a href="blivmedlem.html">Bliv medlem</a>
 					<a href="events.html">Event</a>
 					<a href="bestyrelse.html">Bestyrelse</a>
-					<a href="omos.html">Om os </b> </a>
-			</div>
-	</div>	
+					<a href="omos.html">Om os</a>
+			</div>	
+		</div>
 	
 	<div class="wrapper">
 			
@@ -142,8 +137,8 @@ window.onclick = function(event) {
 							<div class="card">
 									<div class="content">
 											<h2>Bliv medlem af Langeskov Borgerforening </h2>
-										<img src="Hjemmeside BF.png" alt="Langeskov borgerforening logo">
-											<p>Det koster 125 kroner om året at være medlem af Langeskov Borgerforening. Kontingentet dækker hele husstanden, dvs. alle der er tilmeldt folkeregisteret på adressen. <br></br> Indtast det antal I bor i hustanden. </p>
+										<img src="Images/logo1.png" alt="Langeskov borgerforening logo">
+											<p>Det koster 125 kroner om året at være medlem af Langeskov Borgerforening. Kontingentet dækker hele husstanden, dvs. alle der er tilmeldt folkeregisteret på adressen.</p>
 
 												 <div class="bottomcard">
 
@@ -213,7 +208,7 @@ window.onclick = function(event) {
 																8) Eventuelt<br>
 																Al afstemning sker skriftligt såfremt ét medlem kræver dette. Der kan ikke stemmes ved fuldmagt. Hvert medlemskab har max. 2 stemmer. For at stemmeret på generalforsamlingen kan opnås, skal kontingentet være betalt for det regnskabsår, som generalforsamlingen omhandler.<br>
 
-														     § 10 Regnskabet går fra d. 1/1 til d. 31/12.<br></br>
+														     § 10 Regnskabet går fra d. 1/1 til d. 31/12.<br>
 
 														§ 11 Ekstraordinær generalforsamling kan altid sammenkaldes af et flertal i bestyrelsen eller såfremt 25 af medlemmerne begærer det skriftligt til formanden med fortegnelse over, hvad der ønskes behandlet. Ekstraordinær generalforsamling skal afholdes senest 20 dage efter at bestyrelsen har modtaget begæring derom, og der skal indkaldes skriftligt eller ved annoncering i pressen med mindst 8 dages varsel. <br></br>
 
@@ -225,7 +220,7 @@ window.onclick = function(event) {
 
 														§ 15 Foreningen kan ikke opløses så længe 25 medlemmer ønsker den opretholdt. Beslutning om foreningens opløsning kan kun træffes på en i den anledning indvarslet ekstraordinær generalforsamling og da med 2/3 af de fremmødte stemmers flertal.<br></br>
 
-														§ 16 Ved foreningens opløsning træffer general-forsamlingen afgørelse om formuens anvendelse. <br></br> 
+														§ 16 Ved foreningens opløsning træffer general-forsamlingen afgørelse om formuens anvendelse. <br> 
 
 														Foreningen er stiftet 25. august 1924.<br>
 														Vedtægtsændringer: 21. april 1988, 25. februar 1998, 13. marts 2002, 8. marts 2006, 13 marts 2012 senest d. 13. marts 2018
@@ -249,15 +244,15 @@ window.onclick = function(event) {
 						
 										<p>Bor du i Langeskov, kan du blive medlem af Langeskov Borgerforening. Et dejligt fælleskab, med gode events og mulighed for at låne foreningens ting helt GRATIS.<br></br>
 
-										Som medlem kan du helt gratis låne: <br></br>
-										- Service til ca. 500 personer <br></br>
-										- Termokander <br></br>
-										- Æresport <br></br>
-										- Lyskæder <br></br>
-										- Små flagstænger <br></br> 
+										Som medlem kan du helt gratis låne: <br><br>
+										- Service til ca. 500 personer <br><br>
+										- Termokander <br><br>
+										- Æresport <br><br>
+										- Lyskæder <br><br>
+										- Små flagstænger <br><br> 
 										Til en af livets mange store begivenheder. 
 										
-								</p>
+										</p>
 									</div>
 								</div>
 						 </div>
@@ -267,6 +262,8 @@ window.onclick = function(event) {
 					
 		      </div> 
 		</div>
+	
+
 <script>
         // Get the modal
         var modal = document.getElementById('myModal');
@@ -287,10 +284,27 @@ window.onclick = function(event) {
             modal.style.display = "none";
         }
         
-        
-        </script>	
+    </script>	
 
-	</div>
+<footer>
+		<div class="footer">
+			<div class="fontfooter" >
+				<p><br></p>
+				<p>Kontakt os</p>
+				<p> Mobil: 28154523 </p>
+				<p> Mail: langeskov@borgerforening.dk</p>
+			</div>
+
+				<div class="fontfooter" >
+				<p>Copyright &copy; 2018 Langeskov Borgerforening &#8226; Alle rettigheder forbeholdes.</p> 
+			</div>
+
+   <div class="fontfooter" >
+	   <a href="https://www.facebook.com/Langeskovborgerforening-186504144718815/"><img src="images/fb.png" alt="Facebook" align="middle" class="facebook">
+				
+			</div>
+		 </div>
+		</footer>	
 
 </body>
 </html>

@@ -16,8 +16,36 @@
     <div class="headerwrapper">
         <div class="topnavbaggrund">
                 <div class="topnavlogo">
-                        <a href="index.html"><img src="billeder/logo1.png" alt="logo" align="left" style="width:200px;"></a>
+                        <a href="index.html"><img src="images/logo1.png" alt="logo" align="left" class="logo"></a>
                 </div>
+
+                <button onclick="document.getElementById('idet').style.display='block'" class="loginbtn">Log ind</button>
+
+<div id="idet" class="modal" style="right: auto">
+
+  <form class="modal-content animate" >
+
+    <div class="container">
+      <label for="uname"><b>Brugernavn</b></label>
+      <input type="text" placeholder="Din e-mail" name="uname" required>
+
+      <label for="psw"><b>Adgangskode</b></label>
+      <input type="password" placeholder="Adgangskode" name="psw" required>
+
+      <button type="submit" class="btnlog">Log ind</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Husk mig
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('idet').style.display='none'" class="anknap">Luk</button>
+      <span class="psw">Glemt <a href="#">kode?</a></span>
+    </div>
+  </form>
+</div>
+
+
             <div class="topnav">
                     <a href="blivmedlem.html">Bliv medlem</a>
 					<a href="events.html">Event</a>
@@ -151,11 +179,6 @@
       <span class="dot"></span>
     </div>
 
-    <!-- Footer -->
-    <div class="footer">
-      <p>Footer</p>
-    </div>
-
     <!-- Javascript til slideshow -->
     <script>
         var slideIndex = 0;
@@ -176,7 +199,37 @@
             dots[slideIndex-1].className += " active";
             setTimeout(showSlides, 4000); // Change image every 2 seconds
         }
+
+        // få modal
+        var modal = document.getElementById('idet');
+        
+        // Når brugeren klikker overalt uden for modalet, skal det lukke
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
         </script>
+
+<footer>
+		<div class="footer">
+			<div class="fontfooter" >
+				<p><br></p>
+				<p>Kontakt os</p>
+				<p> Mobil: 28154523 </p>
+				<p> Mail: langeskov@borgerforening.dk</p>
+			</div>
+
+				<div class="fontfooter" >
+				<p>Copyright &copy; 2018 Langeskov Borgerforening &#8226; Alle rettigheder forbeholdes.</p> 
+			</div>
+
+   <div class="fontfooter" >
+	   <a href="https://www.facebook.com/Langeskovborgerforening-186504144718815/"><img src="images/fb.png" alt="Facebook" class="facebook"></a>
+				
+			</div>
+		 </div>
+		</footer>
 </body>
 </html>
 

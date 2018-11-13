@@ -1,11 +1,89 @@
 @charset "UTF-8";
 
+/* Baggrund */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    /* The image used */
+    background-image: url("../Images/Baggrund_opacity.png");
+
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 *{
     padding: 0;
     margin: 0;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+
+/* Style til modal på bliv medlem */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo{
+    width: 80px;
+    position: absolute;
+    top: 8px;
+  }
+  
+  .topnav{
+    margin-right: 100px;
+  }
+  
+
+  .topnav a {
+    float: right;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+	width:150px;
+}
+
 
 /* Events */
 .wrapper{
@@ -88,7 +166,6 @@ h2{
 
 .content img{
     width: 100%;
-    height: 330px;
     margin-bottom: 10px;
 }
 
@@ -159,7 +236,7 @@ h2{
 
 /* Slideshow*/
 * {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
+body {font-family: 'Raleway', sans-serif; height: -webkit-fill-available;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
@@ -170,6 +247,7 @@ img {vertical-align: middle;}
   margin-left: 25%;
   margin-bottom: 5%;
   margin-right: 25%;
+  height: 300px;
 }
 
 /* Caption text */
@@ -208,13 +286,32 @@ img {vertical-align: middle;}
 
 /* Footer */
 .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
+    top: 50;
     left: 0;
     right: 0;
     width: 100%;
-    padding:20px;
+    padding:0px;
     color:white;
     background-color:#5470B1;
     text-align: center;
+  }
+
+  .facebook{
+      width: 30%;
+      margin-bottom: 15px;
+  }
+
+  .fontfooter{
+      color: #ffffff;
+      width: 22%;
+      height: 4%;
+      margin-left: 10%;
+      display: inline-block;
+      text-align: left;
+      padding-top: 0%;
+      padding-bottom: 0%;
+      font-size: 90%;
+      margin-bottom: 15px;
   }

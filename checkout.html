@@ -52,7 +52,89 @@
 * {
   box-sizing: border-box;
 }
+.headerwrapper{
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: rgba(55, 54, 57, 0.72);
+  z-index: 2;
+}
 
+/* Header */ 
+.topnavbaggrund {
+	background-color: #4A68AD;
+	padding: 35px 20px;
+}
+
+
+.topnav{
+    margin-right: 100px;
+  }
+
+
+/* Styling af logo på menubar */
+.topnavlogo a {
+    float: left;
+    display: block;
+	width:150px;
+	height: 70px; 
+
+}
+/* styling af menu bar */ 
+.topnav a {
+    float: right;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    width:150px;
+    font-family: Verdana, sans-serif;
+}
+
+/* styling af login knap */
+.loginbtn{
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #6db2ab;
+    color: black;
+    padding: 5px;
+    margin: 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.contentwrapper{
+    width: 1224px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 50px;
+}
+.wrapper{
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  height: 100px;
+  left: 0;
+  top: 0;
+  display: block;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -webkit-overflow-y-scrolling: scroll;
+  -webkit-scroll-behavior: smooth; 
+}
 /* Beskrivelse */
 
 .cardcheck{
@@ -237,6 +319,79 @@ span.price{
   float: left;
 }
 
+.logo{
+  width: 80px;
+  position: absolute;
+  top: 8px;
+}
+
+input[type=password]{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Styling af login modal */ 
+
+/* Login knap */
+.btnlog{
+    width: 80px;
+    background-color: #6db2ab;
+    padding: 4px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+/* Luk knap */
+button.anknap{
+    width: 80px;
+    background-color: #6db2ab;
+    padding: 4px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif; 
+}
+/* Password */
+input[type=password]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+  
+  }
+
+/* Brugernavn */
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .checked{
+    display: inline;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .psw{
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .bruger{
+    font-family: 'Raleway', sans-serif;
+  }
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
 @media (max-width: 800px) {
   .rowcheck{
@@ -250,7 +405,60 @@ span.price{
     </style>
 </head>
 <body>
-    
+    <div class="headerwrapper">
+        <div class="topnavbaggrund">
+                <div class="topnavlogo">
+                        <a href="index.html"><img src="images/logo1.png" alt="logo" align="left" class="logo"></a>
+                </div>
+
+                <button onclick="document.getElementById('idet').style.display='block'" class="loginbtn">Log ind</button>
+
+<div id="idet" class="modal" style="right: auto">
+
+  <form class="modal-content animate" >
+
+    <div class="containermodal">
+      <label for="uname" class="bruger"><b>Brugernavn</b></label>
+      <input type="text" placeholder="Brugernavn" name="uname" required>
+
+      <label for="psw" class="psw"><b>Adgangskode</b></label>
+      <input type="password" placeholder="Adgangskode" name="psw" required>
+
+      <button type="submit" class="btnlog">Log ind</button>
+      <label class="checked">
+        <input type="checkbox" checked="checked" name="remember"> Husk mig
+      </label>
+    </div>
+
+    <div class="containermodal" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('idet').style.display='none'" class="anknap">Luk</button>
+      <span class="psw">Glemt <a href="#">kode?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// få modal
+var modal = document.getElementById('idet');
+
+// Når brugeren klikker overalt uden for modalet, skal det lukke
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+            <div class="topnav">
+                    <a href="blivmedlem.html">Bliv medlem</a>
+					<a href="events.html">Event</a>
+					<a href="bestyrelse.html">Bestyrelse</a>
+					<a href="omos.html">Om os</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
         <div class="left">
                 
             <div class="cardcheck">
@@ -259,10 +467,10 @@ span.price{
                     Lørdag den 24. november kl. 9.00 - 20.00</h2>
                   <img src="images/aarhus.jpg" alt="århus">
                     <p>Årets juletur går til Den Gamle By i Århus. Tag med og oplev julestemningen som
-                        den var på mormor og morfars tid. Har man ikke lyst til at tage i »Den Gamle By« er
+                        den var på mormor og morfars tid. Har man ikke lyst til at tage i Den Gamle By er
                         man velkommen til at tage med bussen til Århus og bruge dagen på egen hånd i
-                        Århus.
-                        Kun for medlemmer af Langeskov Borgerforening.
+                        Århus.<br>
+                        Kun for medlemmer af Langeskov Borgerforening.<br>
                         Pris: 49,00 kr. – indgang til Den Gamle By er for egen regning.</p>
                 </div>
             </div>
@@ -369,6 +577,7 @@ span.price{
                </div>
 
         </div>
+      </div>
       
         
 

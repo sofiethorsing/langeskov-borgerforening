@@ -1,7 +1,66 @@
+/* Baggrund */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    /* The image used */
+    background-image: url("Images/Baggrund_opacity.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+*{
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    height: 100px;
+    left: 0;
+    top: 0;
+    display: block;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-y-scrolling: scroll;
+    -webkit-scroll-behavior: smooth; 
+}
+
+.contentwrapper{
+    width: 1224px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 50px;
+    display: inline-block;
+    top: 120px;
+    height: 100vh;
+}
+
 .column {
   float: left;
   width: 25%;
   margin-bottom: 16px;
+}
+
+.row{
+    margin: 0 -5%;
 }
 
 .row::after {
@@ -20,7 +79,7 @@
 
 .menu_h2 {
     font-size: 35px;
-   padding-top: 20px;
+    padding-top: 20px;
 }
 
 .img_menu {
@@ -30,20 +89,14 @@
 }
 
 .button {
-    font-size: 20px; 
-    font-family: sans-serif, 'Montserrat';
-    background-color: #6db2ab;
+    font: 16px 'Raleway', sans-serif;
+    padding: 10px;
+    background: #6DB2AB;
     border: none;
-    color: black;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    cursor: pointer;
     border-radius: 4px;
+    margin: 4px;
     width: 150px;
+    cursor: pointer;
 }
 
 a:link {
@@ -58,3 +111,36 @@ a:visited {
     opacity: 0.8;
 }
 
+/* Footer */
+/* Footer */
+.footer {
+    position: relative;
+    bottom: 0;
+    top: 320px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding:0px;
+    color:white;
+    background-color:#5470B1;
+    text-align: center;
+  }
+
+  .facebook{
+      width: 30%;
+      margin-bottom: 15px;
+  }
+
+  .fontfooter{
+      color: #ffffff;
+      width: 22%;
+      height: 4%;
+      margin-left: 10%;
+      display: inline-block;
+      text-align: left;
+      padding-top: 0%;
+      padding-bottom: 0%;
+      font-size: 90%;
+      font-family: 'Raleway', sans-serif;
+      margin-bottom: 15px;
+  }
